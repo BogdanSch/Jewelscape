@@ -60,6 +60,10 @@ p.subtitle {
   line-height: 110%;
 }
 
+img {
+  max-width: 100%;
+}
+
 section {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -93,11 +97,18 @@ section .section-description p {
           align-items: center;
   gap: 24px;
 }
+.header .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .header .contacts-button a {
   color: #F9FBFF;
-  padding: 12px 46px;
+  padding: 12px 52px;
   border-radius: 4px;
   background: #DF617F;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
 }
 
 .hero {
@@ -114,7 +125,6 @@ section .section-description p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 879px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -138,7 +148,7 @@ section .section-description p {
           align-items: flex-end;
   gap: 60px;
 }
-.hero .description {
+.hero .caption .description {
   color: #F9FBFF;
   font-size: 24px;
   line-height: 150%;
@@ -158,6 +168,7 @@ section .section-description p {
   line-height: 100%;
   gap: 8px;
   padding: 16px 24px;
+  text-decoration: none;
 }
 .hero__button:hover {
   color: #DF617F;
@@ -226,10 +237,10 @@ section .section-description p {
   padding-top: 16px;
 }
 .about .owl-theme .owl-dots .owl-dot span {
-  background: url("./images/slider-empty-points.svg") center center;
+  background: url("../images/slider-empty-points.svg") center center;
 }
 .about .owl-theme .owl-dots .owl-dot.active span {
-  background: url("./images/slider-fill-point.svg");
+  background: url("../images/slider-fill-point.svg");
 }
 .about .owl-theme .owl-dots:hover .owl-dot span {
   background: url("./images/slider-fill-point.svg");
@@ -267,9 +278,6 @@ section .section-description p {
 }
 .partners .accordion-button::after, .partners .accordion-button:not(.collapsed)::after {
   background-image: url("../images/open.png");
-}
-.partners img {
-  height: 160px;
 }
 
 .contacts {
@@ -361,4 +369,13 @@ section .section-description p {
   list-style-type: none;
   padding-left: 0;
   font-size: 16px;
+}
+
+@media (max-width: 360px) {
+  .hero {
+    background-position: 40% center;
+  }
+  .hero .caption h1 {
+    font-size: 48px;
+  }
 }

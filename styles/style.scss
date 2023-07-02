@@ -69,6 +69,10 @@ p {
     }
 }
 
+img{
+    max-width: 100%;
+}
+
 section {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -105,15 +109,21 @@ section {
         gap: 24px;
     }
 
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
     .contacts-button {
         a {
             color: $white;
-            padding: 12px 46px;
+            padding: 12px 52px;
             border-radius: 4px;
             background: $accent;
+            column-gap: 8px;
         }
     }
 }
+
 //Header - End
 //Hero - Start
 .hero {
@@ -125,10 +135,8 @@ section {
 
     .row {
         max-width: 100%;
-
         h1 {
             display: flex;
-            width: 879px;
             flex-direction: column;
             margin-top: 0;
             margin-bottom: 0;
@@ -141,15 +149,14 @@ section {
         justify-content: center;
         align-items: flex-end;
         gap: 60px;
-    }
 
-    .description {
-        color: $white;
-        font-size: 24px;
-        line-height: 150%;
-        margin-bottom: 0;
+        .description {
+            color: $white;
+            font-size: 24px;
+            line-height: 150%;
+            margin-bottom: 0;
+        }
     }
-
     &__button {
         display: flex;
         align-items: center;
@@ -160,6 +167,7 @@ section {
         line-height: 100%;
         gap: 8px;
         padding: 16px 24px;
+        text-decoration: none;
 
         &:hover {
             color: $accent;
@@ -241,11 +249,11 @@ section {
             padding-top: 16px;
 
             .owl-dot span {
-                background: url('./images/slider-empty-points.svg') center center;
+                background: url('../images/slider-empty-points.svg') center center;
             }
 
             .owl-dot.active span {
-                background: url('./images/slider-fill-point.svg');
+                background: url('../images/slider-fill-point.svg');
             }
 
             &:hover {
@@ -256,6 +264,7 @@ section {
         }
     }
 }
+
 //About - End
 //Exhibition - Start
 .exhibition {
@@ -269,6 +278,7 @@ section {
         }
     }
 }
+
 //Exhibition - End
 //Schedule - Start
 .schedule {
@@ -285,6 +295,7 @@ section {
         padding-bottom: 0;
     }
 }
+
 //Schedule - End
 //Partners - Start
 .partners {
@@ -306,11 +317,8 @@ section {
             background-image: url('../images/open.png');
         }
     }
-
-    img {
-        height: 160px;
-    }
 }
+
 //Partners - End
 //Contacts - Start
 .contacts {
@@ -385,6 +393,7 @@ section {
     }
 
 }
+
 //Contacts - End
 //Footer - Start
 .footer {
@@ -413,4 +422,17 @@ section {
         font-size: 16px;
     }
 }
+
 //Footer - End
+//Medias - Start
+@media (max-width: 768) {
+    
+}
+@media (max-width: 360px) {
+    .hero{
+        background-position: 40% center;
+        .caption h1 {
+            font-size: 48px;
+        }
+    }
+}
