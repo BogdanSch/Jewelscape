@@ -60,11 +60,18 @@ h4 {
 
 p {
     font-size: 16px;
+
+    &.subtitle {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+    }
 }
 
 section {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
     &.hero {
         margin-top: auto;
@@ -73,6 +80,7 @@ section {
 
     .section-description {
         margin-bottom: 40px;
+
         p {
             font-size: 24px;
             font-weight: 400;
@@ -106,7 +114,6 @@ section {
         }
     }
 }
-
 //Header - End
 //Hero - Start
 .hero {
@@ -161,7 +168,6 @@ section {
         }
     }
 }
-
 //Hero - End
 //About - Start
 .about {
@@ -250,7 +256,6 @@ section {
         }
     }
 }
-
 //About - End
 //Exhibition - Start
 .exhibition {
@@ -264,7 +269,6 @@ section {
         }
     }
 }
-
 //Exhibition - End
 //Schedule - Start
 .schedule {
@@ -281,5 +285,132 @@ section {
         padding-bottom: 0;
     }
 }
-
 //Schedule - End
+//Partners - Start
+.partners {
+    .accordion {
+        &-button:not(.collapsed) {
+            color: $black;
+            background-color: $white;
+            box-shadow: none;
+        }
+
+        &-button:focus {
+            border-color: none;
+            outline: 0;
+            box-shadow: none;
+        }
+
+        &-button::after,
+        &-button:not(.collapsed)::after {
+            background-image: url('../images/open.png');
+        }
+    }
+
+    img {
+        height: 160px;
+    }
+}
+//Partners - End
+//Contacts - Start
+.contacts {
+    background-color: $white;
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        & li,
+        li a {
+            color: $black;
+            font-size: 24px;
+            line-height: 150%;
+        }
+
+        & li a:hover {
+            color: $accent;
+        }
+    }
+
+    [type="button"]:not(:disabled),
+    [type="reset"]:not(:disabled),
+    [type="submit"]:not(:disabled),
+    button:not(:disabled) {
+        cursor: pointer;
+    }
+
+    .contact-form {
+        button {
+            color: $white;
+            box-shadow: none;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            display: flex;
+            padding: 8px 20px;
+            align-items: flex-start;
+            border-radius: 4px;
+            border: 2px solid $accent;
+            background: $accent;
+
+            &:hover {
+                border-radius: 4px;
+                border: 2px solid $accent;
+                background: $white;
+                color: $accent;
+            }
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            margin-bottom: 24px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+
+    .form-control:focus {
+        border: none;
+        box-shadow: none;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+}
+//Contacts - End
+//Footer - Start
+.footer {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background: $black;
+
+    h4,
+    p,
+    ul,
+    a {
+        color: $white;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: 16px;
+    }
+}
+//Footer - End
