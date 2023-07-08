@@ -52,7 +52,7 @@
                                     <h1>Виставка<br>ювелірних прикрас</h1>
                                     <p class="description text-end">Вишуканий дизайн,<br>надихаюча майстерність</p>
                                     <div class="d-grid d-flex justify-content-center">
-                                        <a class="hero__button" href="#features">Зареєструватися <img
+                                        <a class="hero__button" data-bs-toggle="modal" data-bs-target="#registration-modal" href="#">Зареєструватися <img
                                                 src="./images/arrow-next.svg" alt="arrow-next"></a>
                                     </div>
                                 </div>
@@ -457,10 +457,76 @@
                             </div>
                         </div>
                     </div>
+                    <div class="footer__up d-flex justify-content-center">
+                        <a href="#"><img src="./images/arrow-up.svg" alt="up arrow"></a>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
+    <!-- The Modal Registration-->
+    <div class="modal" id="registration-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Реєстрація</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form">
+                        <form role="form" id="contact1" class="contact-form" method="post">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input class="form-control" id="name" name="name"
+                                        pattern='([ёЁіІїЇҐґЄєa-zA-Zа-яА-Я][\sёЁіІїЇҐґЄєa-zA-Zа-яА-Я0-9.-]+){1,255}'
+                                        placeholder="Ім'я" type="text" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input class="form-control" id="surname" name="name"
+                                        pattern='([ёЁіІїЇҐґЄєa-zA-Zа-яА-Я][\sёЁіІїЇҐґЄєa-zA-Zа-яА-Я0-9.-]+){1,255}'
+                                        placeholder="Прізвище" type="text" required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input class="form-control" id="email" name="email"
+                                        pattern='([a-zA-Z0-9_.-]+)@([a-zA-Z0-9.-]+){2,255}.?([a-zA-Z]+){2,10}'
+                                        placeholder="email" type="email" required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input class="form-control" id="tel" name="tel" pattern='[0-9]{10}'
+                                        placeholder="Телефон" type="tel" required>
+                                </div>
+                                <div class="col-sm-12 form-group">
+                                    <button class="btn btn-default pull-right" type="submit" data-bs-toggle="modal"
+                                        data-bs-target="#confirm-modal">Зареєструватися</button>
+                                </div>
+                                <div class="fields2"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal Confirm-->
+    <div class="modal" id="confirm-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Confirmation message</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna..
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
