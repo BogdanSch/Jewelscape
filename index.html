@@ -12,10 +12,10 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="carousel/assets/owlcarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="carousel/assets/owlcarousel/assets/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Scripts -->
     <script src="carousel/assets/vendors/jquery.min.js"></script>
     <script src="carousel/assets/owlcarousel/owl.carousel.js"></script>
@@ -48,17 +48,18 @@
             </div>
         </header>
         <main class="main">
-            <section class="hero d-flex align-items-center" id="hero">
+            <section class="hero d-flex align-items-center" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500" id="hero">
                 <div class="container">
                     <div class="hero__wrap">
                         <div class="row justify-content-end">
                             <div class=".offset-4 col-8">
-                                <div class="text-end caption animate__animated animate__heartBeat">
+                                <div class="text-end caption ">
                                     <h1>Виставка<br>ювелірних прикрас</h1>
                                     <p class="description text-end">Вишуканий дизайн,<br>надихаюча майстерність</p>
                                     <div class="d-grid d-flex justify-content-center">
-                                        <a class="hero__button" data-bs-toggle="modal" data-bs-target="#registration-modal" href="#">Зареєструватися <img
-                                        src="./images/arrow-next.svg" alt="arrow-next"></a>
+                                        <a class="hero__button" data-bs-toggle="modal"
+                                            data-bs-target="#registration-modal" href="#">Зареєструватися <img
+                                                src="./images/arrow-next.svg" alt="arrow-next"></a>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +67,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about slideanim" id="about">
+            <section class="about" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500" id="about">
                 <div class="container">
                     <div class="about__wrap text-center">
                         <div class="section-description">
@@ -90,7 +91,7 @@
                     </div>
                 </div>
             </section>
-            <section class="exhibitors slideanim" id="exhibitors">
+            <section class="exhibitors" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500" id="exhibitors">
                 <div class="container">
                     <div class="exhibitors__wrap text-center">
                         <div class="section-description">
@@ -209,7 +210,7 @@
                     </div>
                 </div>
             </section>
-            <section class="schedule slideanim" id="schedule">
+            <section class="schedule" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500" id="schedule">
                 <div class="container">
                     <div class="schedule__wrap">
                         <div class="row align-items-center justify-content-center flex-row-reverse">
@@ -241,7 +242,7 @@
                     </div>
                 </div>
             </section>
-            <section class="partners slideanim" id="partners">
+            <section class="partners" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500" id="partners">
                 <div class="container">
                     <div class="partners__wrap">
                         <h2 class="partners__title text-center mb-3">Наші партнери</h2>
@@ -347,7 +348,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts" id="contacts">
+            <section class="contacts" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500" id="contacts">
                 <div class="container">
                     <div class="contacts__wrap">
                         <div class="row text-center">
@@ -411,7 +412,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500">
             <div class="container">
                 <div class="footer__wrap">
                     <div class="row">
@@ -535,13 +536,18 @@
             </div>
         </div>
     </div>
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="carousel/assets/vendors/highlight.js"></script>
     <script src="carousel/assets/js/app.js"></script>
     <script src="./scripts/carousel-setup.js"></script>
     <script src="./scripts/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
