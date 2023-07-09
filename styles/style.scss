@@ -103,7 +103,6 @@ section {
         padding: 0 40px;
     }
 }
-
 //General - End 
 // Header - Start
 .header {
@@ -131,7 +130,6 @@ section {
         }
     }
 }
-
 //Header - End
 //Hero - Start
 .hero {
@@ -186,7 +184,6 @@ section {
         }
     }
 }
-
 //Hero - End
 //About - Start
 .about {
@@ -275,7 +272,6 @@ section {
         }
     }
 }
-
 //About - End
 //Exhibition - Start
 .exhibition {
@@ -283,7 +279,6 @@ section {
         margin-top: 80px;
     }
 }
-
 //Exhibition - End
 //Schedule - Start
 .schedule {
@@ -300,7 +295,6 @@ section {
         padding-bottom: 0;
     }
 }
-
 //Schedule - End
 //Partners - Start
 .partners {
@@ -323,7 +317,6 @@ section {
         }
     }
 }
-
 //Partners - End
 //Contacts - Start
 .contacts {
@@ -345,7 +338,6 @@ section {
         }
     }
 }
-
 .contact-form {
 
     [type="button"]:not(:disabled),
@@ -398,7 +390,6 @@ section {
         line-height: 150%;
     }
 }
-
 //Contacts - End
 //Footer - Start
 .footer {
@@ -432,7 +423,6 @@ section {
         top: -40px;
     }
 }
-
 //Footer - End
 //Modal - Start
 .modal {
@@ -440,11 +430,9 @@ section {
         padding-bottom: 0;
     }
 }
-
 //Modal - End
 //Animations - Start
 @import 'animations';
-
 //Animations - End
 //Medias - Start
 @media (max-width: 480px) {
