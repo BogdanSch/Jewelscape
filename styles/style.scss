@@ -343,6 +343,7 @@ section {
         }
     }
 }
+
 .contact-form {
 
     [type="button"]:not(:disabled),
@@ -395,6 +396,7 @@ section {
         line-height: 150%;
     }
 }
+
 //Contacts - End
 //Footer - Start
 .footer {
@@ -422,18 +424,26 @@ section {
         padding-left: 0;
         font-size: 16px;
     }
+
+    &__up {
+        position: relative;
+        top: -40px;
+    }
 }
+
 //Footer - End
 //Modal - Start
-.modal{
-    h4{
+.modal {
+    h4 {
         padding-bottom: 0;
     }
 }
-//Modal - End
-//Medias - Start
-@media (max-width: 768) {}
 
+//Modal - End
+//Animations - Start
+@import 'animations';
+//Animations - End
+//Medias - Start
 @media (max-width: 360px) {
     .hero {
         background-position: 40% center;
