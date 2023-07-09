@@ -447,12 +447,17 @@ section {
 
 //Animations - End
 //Medias - Start
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .hero {
         background-position: 40% center;
 
         .caption h1 {
             font-size: 48px;
+        }
+    }
+    .footer{
+        &__up{
+            top: 0;
         }
     }
 }
