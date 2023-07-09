@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jewelscape</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="carousel/assets/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="carousel/assets/owlcarousel/assets/owl.theme.default.min.css">
-
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="carousel/assets/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="carousel/assets/owlcarousel/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Scripts -->
     <script src="carousel/assets/vendors/jquery.min.js"></script>
     <script src="carousel/assets/owlcarousel/owl.carousel.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header navbar-light bg-light">
+        <header class="header navbar-light bg-light fixed-top">
             <div class="container">
                 <div class="header__wrap">
                     <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html"><img src="./images/logo.svg" alt=""></a>
+                        <a class="navbar-brand" href="index.html"><img src="./images/logo.svg" alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation"><img src="./images/burger-menu.svg"
@@ -38,8 +40,7 @@
                                 <li class="nav-item"><a class="nav-link" href="#partners">Учасники</a></li>
                                 <li class="nav-item contacts-button"><a
                                         class="nav-link d-flex justify-content-center align-items-center"
-                                        href="#contacts">Контакти <img src="./images/arrow-next.svg"
-                                            alt="arrow-next"></a></li>
+                                        href="#contacts">Контакти</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -52,13 +53,12 @@
                     <div class="hero__wrap">
                         <div class="row justify-content-end">
                             <div class=".offset-4 col-8">
-                                <div class="text-end caption">
+                                <div class="text-end caption animate__animated animate__heartBeat">
                                     <h1>Виставка<br>ювелірних прикрас</h1>
                                     <p class="description text-end">Вишуканий дизайн,<br>надихаюча майстерність</p>
                                     <div class="d-grid d-flex justify-content-center">
-                                        <a class="hero__button" data-bs-toggle="modal"
-                                            data-bs-target="#registration-modal" href="#">Зареєструватися <img
-                                                src="./images/arrow-next.svg" alt="arrow-next"></a>
+                                        <a class="hero__button" data-bs-toggle="modal" data-bs-target="#registration-modal" href="#">Зареєструватися <img
+                                        src="./images/arrow-next.svg" alt="arrow-next"></a>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +105,8 @@
                             <div class="cards__list row row-cols-1 row-cols-md-3 mb-3 text-center mt-3">
                                 <div class="col mb-3">
                                     <div class="card">
-                                        <img class="card__image" src="./images/Exhibition1-1.jpg" alt="" />
+                                        <img class="card__image" src="./images/Exhibition1-1.jpg"
+                                            alt="exhibition-image" />
                                         <div class="card__body">
                                             <h4 class="card__title">
                                                 Sed ut perspiciatis
@@ -120,7 +121,8 @@
                                 </div>
                                 <div class="col mb-3">
                                     <div class="card">
-                                        <img class="card__image" src="./images/Exhibition1-2.jpg" alt="" />
+                                        <img class="card__image" src="./images/Exhibition1-2.jpg"
+                                            alt="exhibition-image" />
                                         <div class="card__body">
                                             <h4 class="card__title">
                                                 Sed ut perspiciatis
@@ -135,7 +137,8 @@
                                 </div>
                                 <div class="col">
                                     <div class="card">
-                                        <img class="card__image" src="./images/Exhibition1-3.jpg" alt="" />
+                                        <img class="card__image" src="./images/Exhibition1-3.jpg"
+                                            alt="exhibition-image" />
                                         <div class="card__body">
                                             <h4 class="card__title">
                                                 Sed ut perspiciatis
@@ -155,7 +158,8 @@
                             <div class="cards__list row row-cols-1 row-cols-md-3 mb-3 text-center mt-3">
                                 <div class="col mb-3">
                                     <div class="card">
-                                        <img class="card__image" src="./images/Exhibition2-1.jpg" alt="" />
+                                        <img class="card__image" src="./images/Exhibition2-1.jpg"
+                                            alt="exhibition-image" />
                                         <div class="card__body">
                                             <h4 class="card__title">
                                                 Sed ut perspiciatis
@@ -170,7 +174,8 @@
                                 </div>
                                 <div class="col mb-3">
                                     <div class="card">
-                                        <img class="card__image" src="./images/Exhibition2-2.jpg" alt="" />
+                                        <img class="card__image" src="./images/Exhibition2-2.jpg"
+                                            alt="exhibition-image" />
                                         <div class="card__body">
                                             <h4 class="card__title">
                                                 Sed ut perspiciatis
@@ -185,7 +190,8 @@
                                 </div>
                                 <div class="col">
                                     <div class="card">
-                                        <img class="card__image" src="./images/Exhibition2-3.jpg" alt="" />
+                                        <img class="card__image" src="./images/Exhibition2-3.jpg"
+                                            alt="exhibition-image" />
                                         <div class="card__body">
                                             <h4 class="card__title">
                                                 Sed ut perspiciatis
@@ -208,7 +214,7 @@
                     <div class="schedule__wrap">
                         <div class="row align-items-center justify-content-center flex-row-reverse">
                             <div class="col-lg-6 pe-3 text-right"><img class="img-fluid  mb-5 mb-lg-0"
-                                    src="./images/nemo.png" alt="..." /></div>
+                                    src="./images/nemo.png" alt="schedule image" /></div>
                             <div class="col-lg-6 ps-3">
                                 <h3 class="mt-0">Розклад</h3>
                                 <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
@@ -221,7 +227,7 @@
                         </div>
                         <div class="row align-items-center justify-content-center">
                             <div class="col-lg-6 pe-3"><img class="img-fluid  mb-5 mb-lg-0" src="./images/place.png"
-                                    alt="..." /></div>
+                                    alt="location image" /></div>
                             <div class="col-lg-6 ps-3">
                                 <h3 class="mt-0">Місце проведення</h3>
                                 <p class="mb-0">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
@@ -341,7 +347,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts slideanim" id="contacts">
+            <section class="contacts" id="contacts">
                 <div class="container">
                     <div class="contacts__wrap">
                         <div class="row text-center">
@@ -410,7 +416,7 @@
                 <div class="footer__wrap">
                     <div class="row">
                         <div class="col-md-3 col-sm-6 copyright d-flex flex-column justify-content-between">
-                            <a class="navbar-brand logo" href="index.html"><img src="./images/Logo.svg" alt=""></a>
+                            <a class="navbar-brand logo" href="index.html"><img src="./images/Logo.svg" alt="logo"></a>
                             <p> © Jewelscape, Inc. 2023</p>
                         </div>
                         <div class="col-md-3 col-sm-6">

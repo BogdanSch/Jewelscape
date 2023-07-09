@@ -98,6 +98,10 @@ section {
     background-color: $card-bg;
     padding: 0;
     padding-bottom: 13px;
+
+    &__description {
+        padding: 0 40px;
+    }
 }
 
 //General - End 
@@ -109,8 +113,12 @@ section {
         gap: 24px;
     }
 
-    .navbar-toggler:focus {
-        box-shadow: none;
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            box-shadow: none;
+        }
     }
 
     .contacts-button {
@@ -274,12 +282,6 @@ section {
     &-2 {
         margin-top: 80px;
     }
-
-    .card {
-        &__description {
-            padding: 0 40px;
-        }
-    }
 }
 
 //Exhibition - End
@@ -442,6 +444,7 @@ section {
 //Modal - End
 //Animations - Start
 @import 'animations';
+
 //Animations - End
 //Medias - Start
 @media (max-width: 360px) {
