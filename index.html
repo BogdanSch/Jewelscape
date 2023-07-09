@@ -372,19 +372,20 @@
                                                     placeholder="Ім'я" type="text" required>
                                             </div>
                                             <div class="col-sm-6">
-                                                <input class="form-control" id="surname" name="name"
+                                                <input class="form-control" id="surname" name="surname"
                                                     pattern='([ёЁіІїЇҐґЄєa-zA-Zа-яА-Я][\sёЁіІїЇҐґЄєa-zA-Zа-яА-Я0-9.-]+){1,255}'
                                                     placeholder="Прізвище" type="text" required>
                                             </div>
                                             <div class="col-sm-12">
                                                 <input class="form-control" id="email" name="email"
                                                     pattern='([a-zA-Z0-9_.-]+)@([a-zA-Z0-9.-]+){2,255}.?([a-zA-Z]+){2,10}'
-                                                    placeholder="email" type="email" required>
+                                                    placeholder="Електронна Пошта" type="email" required>
                                             </div>
                                             <div class="col-sm-12">
                                                 <input class="form-control" id="tel" name="tel" pattern='[0-9]{10}'
                                                     placeholder="Телефон" type="tel" required>
                                             </div>
+                                            <input type="hidden" name="time" id="time" value="">
                                             <div class="col-sm-12 form-group">
                                                 <button class="btn btn-default pull-right"
                                                     type="submit">Зареєструватися</button>
@@ -464,9 +465,8 @@
             </div>
         </footer>
     </div>
-    <!-- The Modal Registration-->
     <div class="modal" id="registration-modal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Реєстрація</h4>
@@ -482,22 +482,23 @@
                                         placeholder="Ім'я" type="text" required>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input class="form-control" id="surname" name="name"
+                                    <input class="form-control" id="surname" name="surname"
                                         pattern='([ёЁіІїЇҐґЄєa-zA-Zа-яА-Я][\sёЁіІїЇҐґЄєa-zA-Zа-яА-Я0-9.-]+){1,255}'
                                         placeholder="Прізвище" type="text" required>
                                 </div>
                                 <div class="col-sm-12">
                                     <input class="form-control" id="email" name="email"
                                         pattern='([a-zA-Z0-9_.-]+)@([a-zA-Z0-9.-]+){2,255}.?([a-zA-Z]+){2,10}'
-                                        placeholder="email" type="email" required>
+                                        placeholder="Електронна Пошта" type="email" required>
                                 </div>
                                 <div class="col-sm-12">
                                     <input class="form-control" id="tel" name="tel" pattern='[0-9]{10}'
                                         placeholder="Телефон" type="tel" required>
                                 </div>
+                                <input type="hidden" name="time" id="time" value="">
                                 <div class="col-sm-12 form-group">
-                                    <button class="btn btn-default pull-right" type="submit" data-bs-toggle="modal"
-                                        data-bs-target="#confirm-modal">Зареєструватися</button>
+                                    <button class="btn btn-default pull-right"
+                                        type="submit">Зареєструватися</button>
                                 </div>
                                 <div class="fields2"></div>
                             </div>
@@ -507,9 +508,8 @@
             </div>
         </div>
     </div>
-    <!-- The Modal Confirm-->
     <div class="modal" id="confirm-modal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Confirmation message</h4>
