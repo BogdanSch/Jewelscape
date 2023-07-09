@@ -1,10 +1,10 @@
-// $(function () {
-//     $(window).scroll(function () {
-//         $(".slideanim").each(function () {
-//             let pos = $(this).offset().top;
-//             if (pos < $(window).scrollTop() + 700) {
-//                 $(this).addClass("slide");
-//             }
-//         });
-//     });
-// });
+"use strict"
+
+//Aos
+AOS.init();
+// Fields customization
+$(function() {
+    $(".phone").mask("+38 (999)-999-9999", {
+        autoсlear: false
+    });    
+})

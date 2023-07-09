@@ -16,9 +16,6 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="carousel/assets/owlcarousel/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="carousel/assets/owlcarousel/assets/owl.theme.default.min.css" />
-    <!-- Scripts -->
-    <script src="carousel/assets/vendors/jquery.min.js"></script>
-    <script src="carousel/assets/owlcarousel/owl.carousel.js"></script>
 </head>
 
 <body>
@@ -48,7 +45,8 @@
             </div>
         </header>
         <main class="main">
-            <section class="hero d-flex align-items-center" data-aos="fade-up" data-aos="fade-up" data-aos-duration="1500" id="hero">
+            <section class="hero d-flex align-items-center" data-aos="fade-up" data-aos="fade-up"
+                data-aos-duration="1500" id="hero">
                 <div class="container">
                     <div class="hero__wrap">
                         <div class="row justify-content-end">
@@ -394,8 +392,9 @@
                                                     placeholder="Електронна Пошта" type="email" required>
                                             </div>
                                             <div class="col-sm-12">
-                                                <input class="form-control" id="tel" name="tel" pattern='[0-9]{10}'
-                                                    placeholder="Телефон" type="tel" required>
+                                                <input class="form-control phone" id="tel" name="tel"
+                                                    placeholder="+38 (___) ___ ____" type="tel"
+                                                    title="Формат: (099) 999 9999" required>
                                             </div>
                                             <input type="hidden" name="time" id="time" value="">
                                             <div class="col-sm-12 form-group">
@@ -477,6 +476,7 @@
             </div>
         </footer>
     </div>
+    <!-- Modals -->
     <div class="modal" id="registration-modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -504,8 +504,8 @@
                                         placeholder="Електронна Пошта" type="email" required>
                                 </div>
                                 <div class="col-sm-12">
-                                    <input class="form-control" id="tel" name="tel" pattern='[0-9]{10}'
-                                        placeholder="Телефон" type="tel" required>
+                                    <input class="form-control phone" id="tel" name="tel" placeholder="+38 (___) ___ ____"
+                                        type="tel" title="Формат: (099) 999 9999" required>
                                 </div>
                                 <input type="hidden" name="time" id="time" value="">
                                 <div class="col-sm-12 form-group">
@@ -540,13 +540,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="carousel/assets/vendors/jquery.min.js"></script>
+    <script src="carousel/assets/owlcarousel/owl.carousel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="carousel/assets/vendors/highlight.js"></script>
     <script src="carousel/assets/js/app.js"></script>
+    <script src="./scripts/jquery.maskedinput.min.js"></script>
     <script src="./scripts/carousel-setup.js"></script>
     <script src="./scripts/script.js"></script>
     <script>
-        AOS.init();
     </script>
 </body>
 
